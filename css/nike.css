@@ -140,9 +140,17 @@ header{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  align-content: center;
   padding: 10px;
+  
 }
 .size-icon{
   padding: 10px;
-  : var(--main-color-3);
+}
+.imageWall{
+  width: 100%;
+}
+.boiteWall{
+  
+  
 }
