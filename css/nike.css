@@ -6,9 +6,6 @@
 
   }
 
-body {
-  background-color: var(--main-color-1);;
-}
  
 .svg-logo, .svg-github, .svg-slack, .svg-twitter, .svg-open-collective {
   fill: var(--main-color-3);
@@ -18,7 +15,7 @@ body {
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
 body {
-	background: var(--main-color-1);
+	background: var(--main-color-3);
 	font-size:22px;
 	line-height: 32px;
 	color: #ffffff;
@@ -51,6 +48,8 @@ h1 {
 	text-align:center;
 	font-size:60px;
 	font-family: 'Bree Serif', 'serif';
+	color: var(--main-color-1);
+	background-color: var(--main-color-2);
 	}
 
 p {
@@ -141,7 +140,11 @@ header{
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding: 10px;
+  padding: 30px;
+  background-color: var(--main-color-1);
+  position: absolute;
+  width: 100%;
+  
   
 }
 .size-icon{
@@ -149,8 +152,48 @@ header{
 }
 .imageWall{
   width: 100%;
+  height: auto;
+  
 }
-.boiteWall{
-  
-  
+.titreSolde{
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.barreSolde{
+	position: absolute;
+	width: 100%;
+	
+}
+.boxChaussure{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+.article{
+	width: calc(100%/3);
+	aspect-ratio: 1/1;
+}
+.imageArticle{
+	width: 100%;
+}
+.boxFooter{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 100%;
+}
+.imageLogo{
+	width: 150px;
+	background-color: var(--main-color-2);
+	
+}
+.boxFooter p{
+	display: flex;
+	
+	background-color: var(--main-color-1);
+	color: var(--main-color-2);
+	width:100%
 }
