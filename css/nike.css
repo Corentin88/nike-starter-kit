@@ -15,7 +15,7 @@
 @import url(https://fonts.googleapis.com/css?family=Bree+Serif);
 
 body {
-	background: var(--main-color-3);
+	background-color: var(--main-color-3);
 	font-size:22px;
 	line-height: 32px;
 	color: #ffffff;
@@ -130,16 +130,15 @@ header{
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  background-color: var(--main-color-1);
-  position: absolute;
+  background-color: var(--main-color-1); 
   width: 100%;
+  padding: 20px;
   
   
 }
 .size-icon, .size-logo{
-  padding: 15px;
+  padding: 25px;
 }
-
 
 /*image sidebar*/
 
@@ -153,22 +152,28 @@ header{
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	transform: scale(1.3);
+
 	
-  }
+}
+
+/* barre Solde*/
+
 .titreSolde{
 	height: 100px;
 	text-align: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width: 100%;
 }
-
-/* barre Solde*/
 
 
 .barreSolde{
 	position: relative;
 	bottom: 130px;
+	width: 100%;
+	
 	
 }
 
@@ -276,9 +281,61 @@ header{
 
 /*Media QUeries*/
 
-@media(max-width:992px){
+@media(min-width: 769px) and (max-width: 992px){
 	.imageWall{
 		display: none;
 	}
+	header{
+		flex-direction: column-reverse;
+		
+	}
+	.boxLogo{
+		background-color: var(--main-color-1);
+		color: var(--main-color-2);
+	}
+	.svg-logo{
+		fill: var(--main-color-2);
+	}
+	.boxIcone{
+		background-color: var(--main-color-2);
+		fill: var(--main-color-1);
+	}
+	.svg-github, .svg-slack, .svg-twitter, .svg-open-collective{
+		fill: var(--main-color-1);
+	}
+	.boxFooter{
+		flex-direction: column;
+	}
+	.article{
+		width: calc(100%/2);
+		aspect-ratio: 1/1;
+		position: relative;
+	}
+	.marque{
+		transform: scale(0.8);
+		transform: rotate(15deg);
+	}
+	.prix{
+		transform: scale(0.8);
+		transform: rotate(-20deg);
+
+	}
 	
+}
+@media(max-width:768px){
+	.article{
+		width: calc(100%);
+		aspect-ratio: 1/1;
+		position: relative;
+	}
+	.marque{
+		transform: scale(1.5);
+		
+	}
+		
+	.prix{
+		transform: scale(1.5);
+		
+
+	}
 }
