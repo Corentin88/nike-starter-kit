@@ -309,7 +309,7 @@ header{
 	.article{
 		width: calc(100%/2);
 		aspect-ratio: 1/1;
-		position: relative;
+		
 	}
 	.marque{
 		transform: scale(0.8);
@@ -323,10 +323,34 @@ header{
 	
 }
 @media(max-width:768px){
+	.imageWall{
+		display: none;
+	}
+	header{
+		flex-direction: column-reverse;
+		
+	}
+	.boxLogo{
+		background-color: var(--main-color-1);
+		color: var(--main-color-2);
+	}
+	.svg-logo{
+		fill: var(--main-color-2);
+	}
+	.boxIcone{
+		background-color: var(--main-color-2);
+		fill: var(--main-color-1);
+	}
+	.svg-github, .svg-slack, .svg-twitter, .svg-open-collective{
+		fill: var(--main-color-1);
+	}
+	.boxFooter{
+		flex-direction: column;
+	}
 	.article{
 		width: calc(100%);
 		aspect-ratio: 1/1;
-		position: relative;
+		p
 	}
 	.marque{
 		transform: scale(1.5);
