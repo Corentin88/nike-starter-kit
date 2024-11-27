@@ -23,12 +23,6 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	}
 
-h1 {
-	font-size: 60px;
-	text-align: center;
-	color: #FFF;
-}	
-
 h3 {
 	font-size: 30px;
 	text-align: center;
@@ -130,7 +124,7 @@ li > a:only-child:after {
     content: ''; 
   }
 
-*{
+* { 
   margin: 0;
   padding: 0;
 }
@@ -140,21 +134,26 @@ header{
   justify-content: space-around;
   align-items: center;
   align-content: center;
-  padding: 30px;
   background-color: var(--main-color-1);
   position: absolute;
   width: 100%;
   
   
 }
-.size-icon{
+.size-icon, .size-logo{
   padding: 10px;
 }
 .imageWall{
   width: 100%;
   height: auto;
-  
+  overflow: hidden;
+ 
 }
+.imageWall img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+  }
 .titreSolde{
 	height: 100px;
 	text-align: center;
@@ -163,8 +162,8 @@ header{
 	align-items: center;
 }
 .barreSolde{
-	position: absolute;
-	width: 100%;
+	position: relative;
+	bottom: 130px;
 	
 }
 .boxChaussure{
@@ -179,21 +178,36 @@ header{
 .imageArticle{
 	width: 100%;
 }
-.boxFooter{
+/*footer*/
+
+.boxFooter {
 	display: flex;
-	flex-direction: row;
+	justify-content: space-evenly;
 	align-items: center;
-	width: 100%;
+	align-content: center;
 }
-.imageLogo{
-	width: 150px;
-	background-color: var(--main-color-2);
-	
-}
-.boxFooter p{
+  
+  .footerLogo {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .imageLogo {
+	width: 100%;
+	background-color: var(--main-color-2);
+	padding: 20px;
 	
-	background-color: var(--main-color-1);
+  }
+  
+  .boxFooter p {
+	text-align: center;
+	font-size: 24px;
+	font-weight: bold;
 	color: var(--main-color-2);
-	width:100%
-}
+	background-color: var(--main-color-1);
+	width: 100%;
+	height: 90px;
+	align-content: center;
+	padding: 38px;
+  }
