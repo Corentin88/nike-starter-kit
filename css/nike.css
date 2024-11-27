@@ -179,6 +179,7 @@ header{
 	display: flex;
 	flex-flow: row wrap;
 	align-items: center;
+	position: relative;
 }
 .article{
 	width: calc(100%/3);
@@ -186,6 +187,13 @@ header{
 }
 .imageArticle{
 	width: 100%;
+	
+}
+.prix{
+	position: absolute;
+	background-color: var(--main-color-2);
+	color: var(--main-color-1);
+	bottom: 900px;
 }
 
 
