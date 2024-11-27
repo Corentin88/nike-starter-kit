@@ -128,6 +128,11 @@ li > a:only-child:after {
   margin: 0;
   padding: 0;
 }
+
+/* header*/
+
+
+
 header{
   display: flex;
   flex-direction: row;
@@ -143,6 +148,10 @@ header{
 .size-icon, .size-logo{
   padding: 10px;
 }
+
+
+/*image sidebar*/
+
 .imageWall{
   width: 100%;
   height: auto;
@@ -161,11 +170,20 @@ header{
 	justify-content: center;
 	align-items: center;
 }
+
+/* barre Solde*/
+
+
 .barreSolde{
 	position: relative;
 	bottom: 130px;
 	
 }
+
+/*Chaussures*/
+
+
+
 .boxChaussure{
 	display: flex;
 	flex-flow: row wrap;
@@ -178,7 +196,12 @@ header{
 .imageArticle{
 	width: 100%;
 }
+
+
+
+
 /*footer*/
+
 
 .boxFooter {
 	display: flex;
