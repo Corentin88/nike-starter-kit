@@ -41,7 +41,7 @@ p {
 }
 
 nav {
-	margin: 50px 0;
+	margin: 50px;
 	background-color: var(--main-color-1);
 }
 
@@ -67,8 +67,9 @@ nav a {
 }
 
 nav a:hover { 
-	background-color: var(--main-color-4);
-  border-radius: 5px;
+	background-color: var(--main-color-3);
+	color: var(--main-color-1);
+    border-radius: 5px;
 }
 
 /* Hide Dropdowns by Default */
@@ -196,30 +197,35 @@ header{
 .boxFooter {
 	display: flex;
 	align-content: center;
-	width: 100%;
+	padding: 0;
+	
 }
   
-  .footerLogo {
+.footerLogo {
 	flex-grow: 1;
-	width: 40%;
-  }
-  
-  .imageLogo {
-	background-color: var(--main-color-2);
-	padding: 40px;
-	width: 100%;
-
 	
   }
   
-  .texteFooter{
+.imageLogo {
+	background-color: var(--main-color-2);
+	width: 100%;
+	height: 100%;
+	
+	
+  }
+  
+.texteFooter{
 	text-align: center;
 	font-size: 100px;
 	font-weight: bold;
 	color: var(--main-color-2);
 	background-color: var(--main-color-1);
-	flex-grow: 2 ;
+	width: 100%;
+	height: 100%;
 	align-content: center;
-	width: 60%;
-	
   }
+.boxTexte{
+	flex-grow: 2;
+	
+	
+}
