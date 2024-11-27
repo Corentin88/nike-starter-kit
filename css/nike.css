@@ -269,3 +269,12 @@ header{
 	
 	
 }
+
+/*Media QUeries*/
+
+@media(max-width:992px){
+	.imageWall{
+		display: none;
+	}
+	
+}
