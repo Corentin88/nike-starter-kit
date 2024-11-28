@@ -132,9 +132,19 @@ header{
   align-content: center;
   background-color: var(--main-color-1); 
   width: 100%;
-  padding: 20px;
   
   
+  
+}
+.nav{
+	flex-grow: 1;
+}
+.boxLogo{
+	flex-grow: 1;
+	background-color: var(--main-color-1);
+}
+.boxIcone{
+	flex-grow: 1;
 }
 .size-icon, .size-logo{
   padding: 25px;
@@ -199,11 +209,12 @@ header{
 	filter: grayscale(100%);
 	transition: transform 0.6s ease, filter 0.6s ease;
 	overflow: hidden;
+	transform: scale(0.8);
 	
 }
 .imageArticle:hover{
 	filter: grayscale(0%);
-	transform: scale(1.2);
+	transform: scale(1);
 	overflow: hidden;
 }
 
