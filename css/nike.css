@@ -285,7 +285,6 @@ header {
 .boxFooter {
 	display: flex;
 	align-content: center;
-	padding: 0;
 	width: 100%;
 
 }
@@ -296,6 +295,7 @@ header {
 }
 
 .imageLogo {
+	display: flex;
 	background-color: var(--main-color-2);
 	width: 100%;
 	height: 100%;
@@ -334,14 +334,17 @@ header {
 
 	.nav {
 		flex-direction: column;
-		background-color: white;
+		justify-content: center;
 		width: 100%;
 	}
 
 	nav {
 		flex-direction: column;
 	}
-
+	nav a:hover {
+			background-color: var(--main-color-2);
+	}
+	
 	.boxLogo {
 		background-color: var(--main-color-1);
 		color: var(--main-color-2);
@@ -349,13 +352,14 @@ header {
 
 	.svg-logo {
 		fill: var(--main-color-2);
+		
 	}
 
 	.boxIcone {
 		background-color: var(--main-color-2);
 		fill: var(--main-color-1);
 		width: 100%;
-		justify-content: space-around;
+		justify-content: space-evenly;
 	}
 
 	.svg-github,
@@ -364,9 +368,29 @@ header {
 	.svg-open-collective {
 		fill: var(--main-color-1);
 	}
+	.titreSolde{
+		font-size: 30px;
+	}
 
 	.boxFooter {
 		flex-direction: column;
+		
+		
+	}
+	.footerLogo{
+		height: 250px;
+		
+		
+	}
+	.imageLogo{
+		padding: 20px;
+	}
+	.boxTexte{
+		height: 90px;
+
+	}
+	.texteFooter{
+		padding: 20px;
 	}
 
 	.article {
