@@ -32,7 +32,6 @@ a {
 }
 
 h1 {
-	margin-top: 100px;
 	text-align: center;
 	font-size: 60px;
 	font-family: 'Bree Serif', 'serif';
@@ -45,9 +44,9 @@ p {
 }
 
 nav {
-	
-	background-color: var(--main-color-1);
 	display: flex;
+	background-color: var(--main-color-1);
+
 }
 
 nav ul {
@@ -64,7 +63,6 @@ nav ul li {
 
 nav a {
 	display: block;
-	padding: 0 10px;
 	color: #FFF;
 	font-size: 20px;
 	line-height: 60px;
@@ -88,6 +86,7 @@ nav ul ul {
 /* Display Dropdowns on Hover */
 nav ul li:hover>ul {
 	display: inherit;
+	z-index: 3;
 }
 
 /* Fisrt Tier Dropdown */
@@ -140,19 +139,16 @@ header {
 	align-items: center;
 	align-content: center;
 	background-color: var(--main-color-1);
-	width: 100%;
-	padding: 30px;
+	
 
 }
 
-.nav {
+nav {
 	display: flex;
 	flex-grow: 1;
 	width: 100%;
 	background-color: var(--main-color-1);
-	height: 90px;
-	padding-left: 20px;
-
+	justify-content: center;
 }
 
 .boxLogo {
@@ -167,6 +163,7 @@ header {
 	display: flex;
 	flex-grow: 1;
 	width: 100%;
+	justify-content: center;
 }
 
 .size-icon,
@@ -204,7 +201,7 @@ header {
 
 
 .barreSolde {
-	position: relative;
+	
 	bottom: 130px;
 	width: 100%;
 
@@ -322,7 +319,7 @@ header {
 
 /*Media QUeries*/
 
-@media(min-width: 769px) and (max-width: 992px) {
+@media(min-width: 768px) and (max-width: 992px) {
 	.imageWall {
 		display: none;
 	}
@@ -332,22 +329,65 @@ header {
 
 	}
 
-	.nav {
-		flex-direction: column;
-		justify-content: center;
-		width: 100%;
-	}
-
 	nav {
-		flex-direction: column;
+        flex-direction: column;
+		flex-wrap: wrap;
+        align-items: flex-start;
+		
+    }
+
+    nav ul {
+		display: flex;
+        flex-direction: column;
+		width: 100%;
+    }
+	.accueil{
+		background-color: var(--main-color-2);
+
 	}
+	.accueil a {
+		color: var(--main-color-1);
+	}
+    nav ul li {
+		position: relative;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: left;
+        
+    }
+
+    /* Sous-menus */
+    nav ul li ul {
+        position: absolute;
+		top: 0;
+		left: 175px;
+        display: none; /* Par défaut, caché */
+        width: 100% ;
+        padding: 0;
+    }
+
+    nav ul li:hover ul {
+        display: block; /* Affichage au survol */
+    }
+
+    nav ul li ul li a {
+        padding-left: 40px; /* Indentation pour les sous-menus */
+        background: #222;
+    }
+
 	nav a:hover {
 			background-color: var(--main-color-2);
+			z-index: 4;
+			
+			
 	}
 	
 	.boxLogo {
 		background-color: var(--main-color-1);
 		color: var(--main-color-2);
+		
 	}
 
 	.svg-logo {
@@ -371,28 +411,19 @@ header {
 	.titreSolde{
 		font-size: 30px;
 	}
-
 	.boxFooter {
 		flex-direction: column;
-		
-		
 	}
 	.footerLogo{
-		height: 250px;
-		
-		
+		height: 250px;	
 	}
-	.imageLogo{
-		padding: 20px;
+	main{
+		position: relative;
 	}
 	.boxTexte{
 		height: 90px;
 
 	}
-	.texteFooter{
-		padding: 20px;
-	}
-
 	.article {
 		width: calc(100%/2);
 		aspect-ratio: 1/1;
@@ -462,4 +493,90 @@ header {
 
 
 	}
+	nav {
+        flex-direction: column;
+		flex-wrap: wrap;
+        align-items: flex-start;
+		
+    }
+
+    nav ul {
+		display: flex;
+        flex-direction: column;
+		width: 100%;
+    }
+	.accueil{
+		background-color: var(--main-color-2);
+
+	}
+	.accueil a {
+		color: var(--main-color-1);
+	}
+    nav ul li {
+		position: relative;
+    }
+
+    nav ul li a {
+        width: 100%;
+        text-align: left;
+        
+    }
+
+    /* Sous-menus */
+    nav ul li ul {
+        position: absolute;
+		top: 0;
+		left: 175px;
+        display: none; /* Par défaut, caché */
+        width: 100% ;
+        padding: 0;
+    }
+
+    nav ul li:hover ul {
+        display: block; /* Affichage au survol */
+    }
+
+    nav ul li ul li a {
+        padding-left: 40px; /* Indentation pour les sous-menus */
+        background: #222;
+    }
+
+	nav a:hover {
+			background-color: var(--main-color-2);
+			z-index: 4;
+			
+			
+	}
+
+	.titreSolde{
+	font-size: 30px;
+}
+	.article{
+		position: relative;
+	}
+	.marque {
+	transform: scale(0.8);
+	transform: rotate(15deg);
+	position: absolute;
+	top: 50px;
+	left: 300px;
+}
+
+	.prix {
+	transform: scale(0.8);
+	transform: rotate(-20deg);
+	top: 50px;
+	left: 150px;
+}
+	.boxFooter {
+	flex-direction: column;
+}
+	.footerLogo{
+	height: 250px;	
+}
+
+
+.boxTexte{
+	height: 90px;
+}
 }
